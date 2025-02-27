@@ -1,0 +1,189 @@
+/* Container for the whole component */
+.expense-list-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styles */
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Message box */
+  .message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  
+  .message p {
+    margin: 0;
+  }
+  
+  /* Form styles */
+  .update-expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .update-expense-form h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .input-field label {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .input-field input,
+  .input-field select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .input-field input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  .input-field input[type="date"] {
+    cursor: pointer;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Expense table */
+  .expense-table {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table th,
+  table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  table td {
+    background-color: #fff;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .edt {
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: #28a745;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .dlt {
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: rgb(232, 44, 44);
+    border-radius: 4px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .dlt:hover{
+    background-color: red;
+  }
+  
+  .edt:hover {
+    background-color: #218838;
+  }
+  
+  .edt:active {
+    background-color: #1e7e34;
+  }
+  
+  .edt:focus {
+    outline: none;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .expense-list-container {
+      width: 95%;
+    }
+  
+    .expense-table table {
+      font-size: 14px;
+    }
+  
+    .update-expense-form {
+      margin: 10px;
+    }
+  
+    .input-field input,
+    .input-field select {
+      font-size: 0.9rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+    }
+  }
+  
